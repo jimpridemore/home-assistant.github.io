@@ -114,7 +114,7 @@ class MotionLights(appapi.AppDaemon):
     self.listen_state(self.motion, "binary_sensor.drive", new = "on")
 
   def motion(self, entity, attribute, old, new, kwargs):
-    if self.self.sun_down():
+    if self.sun_down():
       self.turn_on("light.drive")
       self.run_in(self.light_off, 60)
       self.flashcount = 0
