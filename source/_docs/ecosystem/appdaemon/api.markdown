@@ -1026,7 +1026,7 @@ Function to be invoked when the requested state change occurs. It must conform t
 
 ##### {% linkable_title offset = <seconds> %}
 
-The time in seconds that the callback should be delayed after sunrise. A negative value will result in the callback occurring before sunrise. This parameter cannot be combined with `random_start` or `random_end`
+The time in seconds that the callback should be delayed after sunset. A negative value will result in the callback occurring before sunset. This parameter cannot be combined with `random_start` or `random_end`
 
 ##### {% linkable_title \*\*kwargs %}
 
